@@ -55,4 +55,17 @@ interface Feedback {
       explanation: string;
     }[];
   };
+  keywordMatch: {
+    score: number;
+    keywords: {
+      keyword: string;
+      found: boolean;
+      context?: string;
+    }[];
+    tips: {
+      type: "good" | "improve";
+      tip: string;
+      explanation: string;
+    }[];
+  };
 }

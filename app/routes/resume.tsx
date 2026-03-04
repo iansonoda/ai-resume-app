@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from "react-router"
 import Summary from "~/components/Summary";
 import ATS from "~/components/ATS";
 import Details from "~/components/Details";
+import KeywordExtractor from "~/components/KeywordExtractor";
 import { usePuterStore } from "~/lib/puter";
 
 export const meta = () => {
@@ -83,6 +84,9 @@ const resume = () => {
                     <div className="flex flex-col gap-8 animate-in fade-in duration-1000">
                         <Summary feedback={feedback}/>
                         <ATS score={feedback.ATS.score || 0} suggestions={feedback.ATS.tips || []} />
+                        {feedback.keywordMatch?.keywords?.length > 0 && (
+                            <KeywordExtractor keywords={feedback.keywordMatch.keywords} />
+                        )}
                         <Details feedback={feedback} />
                     </div>
                 ) : (
