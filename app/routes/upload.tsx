@@ -89,7 +89,7 @@ const upload = () => {
         }
             
         const feedbackText = typeof feedback === 'string' 
-        ? feedback.message.content
+        ? feedback
         : feedback.message.content[0].text;
 
         data.feedback = JSON.parse(feedbackText)
