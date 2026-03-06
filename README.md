@@ -1,32 +1,67 @@
-# Welcome to React Router!
+# 🚀 AI Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+<p align="center">
+  <img src="public/images/readme-screen-1.png" width="45%" />
+  <img src="public/images/readme-screen-2.png" width="45%" />
+</p>
+<p align="center">
+  <img src="public/images/readme-screen-3.png" width="91%" />
+</p>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+**Transform your resume from a document into a career-launching asset.** The **AI Resume Analyzer** leverages state-of-the-art AI to provide deep insights, ATS scoring, and targeted feedback—helping you land more interviews by matching your profile with your dream job's requirements.
 
-## Features
+---
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## 💎 Key Features
 
-## Getting Started
+- **🧠 Intelligent AI Analysis**: Powered by [Puter.js](https://puter.com/), our analyzer deep-scans your resume against specific job descriptions to provide professional-grade feedback.
+- **📊 ATS Scoring Engine**: Get a precise "Applicant Tracking System" score and learn exactly how to bypass automated filters.
+- **🔍 Strategic Keyword Extraction**: Automatically extracts 8-15 critical keywords and skills from any job description and checks for their presence in your resume.
+- **✨ Targeted Feedback Categories**:
+  - **Tone & Style**: Ensures your professional voice matches the industry standards.
+  - **Content & Impact**: Improves your bullet points for maximum impact.
+  - **Structure & Formatting**: High-level advice on layout and readability.
+  - **Skill Gap Analysis**: Identifies what's missing for a perfect match.
+- **🖼️ Visual Insights**: Interactive gauges, progress circles, and keyword badges for intuitive data visualization.
+- **🔒 Privacy-First Storage**: Secure, decentralized file storage and KV management via Puter's cloud infrastructure.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [React Router 7](https://reactrouter.com/) (Full-stack React)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) + [tw-animate-css](https://github.com/thefubuki/tw-animate-css)
+- **AI/Cloud**: [Puter.js](https://puter.com/) (AI, FS, KV storage)
+- **PDF Processing**: [pdfjs-dist](https://github.com/mozilla/pdf.js)
+- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
+- **Icons**: [Lucide React](https://lucide.dev/) (implied/style-matched)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Puter.js Account](https://puter.com/) (for cloud features)
 
 ### Installation
 
-Install the dependencies:
+1. Clone the repository:
 
-```bash
-npm install
-```
+   ```bash
+   git clone https://github.com/iansonoda/ai-resume-app.git
+   cd ai-resume-app
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
 ### Development
 
-Start the development server with HMR:
+Start the development server with Hot Module Replacement (HMR):
 
 ```bash
 npm run dev
@@ -34,54 +69,33 @@ npm run dev
 
 Your application will be available at `http://localhost:5173`.
 
-## Building for Production
+### Production Build
 
-Create a production build:
+Create an optimized production bundle:
 
 ```bash
 npm run build
+npm run start
 ```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
 
 ---
 
-Built with ❤️ using React Router.
+## 🏗️ How It Works
+
+1.  **Upload & Home**: Manage all your applications from a central dashboard. Drag and drop your PDF resume to start a new analysis.
+    ![Home Screen](public/images/readme-screen-3.png)
+2.  **AI Analysis**: Our engine scans both documents, matching skills, extracting keywords, and assessing structural quality.
+3.  **Review Dashboard**: Get a comprehensive breakdown of improvements, scores, and missing keywords.
+    ![Review Dashboard](public/images/readme-screen-1.png)
+4.  **Keyword Matching**: See exactly which skills are missing and how to improve your match rate.
+    ![Keyword Matching](public/images/readme-screen-2.png)
+
+---
+
+## 🛡️ License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
+Built with ❤️ for career growth. 🚀
